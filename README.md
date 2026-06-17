@@ -1,0 +1,70 @@
+const CONFIG = {
+  "eventSubtitle": "Pour financer le chapiteau de la Fancy-fair",
+  "schoolName": "École communale d'Hennuyères",
+  "ticketFrom": 1,
+  "ticketTo": 500,
+  "drawDateTime": "2026-06-25T12:00",
+  "password": "ecole2024",
+  "prizes": [
+    {
+      "label": "Robot pâtissier",
+      "tickets": "42,137"
+    },
+    {
+      "label": "Enceinte JBL",
+      "tickets": "205,318"
+    },
+    {
+      "label": "Casque audio JBL",
+      "tickets": "77,444,12,299"
+    },
+    {
+      "label": "Plancha",
+      "tickets": "18"
+    },
+    {
+      "label": "Gaufrier",
+      "tickets": "5000"
+    },
+    {
+      "label": "Bon cinéma",
+      "tickets": "2596"
+    },
+    {
+      "label": "Appareil à raclette",
+      "tickets": "1236"
+    },
+    {
+      "label": "Airfryer",
+      "tickets": "4963"
+    },
+    {
+      "label": "Trottinette",
+      "tickets": "1111"
+    },
+    {
+      "label": "Uno",
+      "tickets": "2525"
+    },
+    {
+      "label": "Mini vidéo projecteur",
+      "tickets": "2363"
+    },
+    {
+      "label": "pili pili",
+      "tickets": "852"
+    },
+    {
+      "label": "Set de couteaux",
+      "tickets": "963"
+    },
+    {
+      "label": "Jeu Flip 7",
+      "tickets": "1899"
+    },
+    {
+      "label": "Montre connectée",
+      "tickets": "3444"
+    }
+  ]
+};
