@@ -1,193 +1,70 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tombola - École communale d'Hennuyères</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-        
-        .container {
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
-            padding: 40px;
-            max-width: 600px;
-            width: 100%;
-        }
-        
-        h1 {
-            color: #333;
-            margin-bottom: 10px;
-            text-align: center;
-        }
-        
-        .subtitle {
-            color: #666;
-            text-align: center;
-            margin-bottom: 30px;
-            font-size: 14px;
-        }
-        
-        .info-box {
-            background: #f5f5f5;
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-        
-        .info-item {
-            margin-bottom: 10px;
-        }
-        
-        .info-item strong {
-            color: #667eea;
-        }
-        
-        .prizes {
-            margin-top: 30px;
-        }
-        
-        .prizes h2 {
-            color: #333;
-            margin-bottom: 20px;
-            text-align: center;
-            font-size: 18px;
-        }
-        
-        .prize-list {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-        }
-        
-        .prize {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 15px;
-            border-radius: 8px;
-            text-align: center;
-            font-size: 13px;
-        }
-        
-        .prize-title {
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-        
-        .prize-tickets {
-            font-size: 11px;
-            opacity: 0.9;
-        }
-        
-        .footer {
-            text-align: center;
-            margin-top: 30px;
-            color: #999;
-            font-size: 12px;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>🎉 Tombola de l'École</h1>
-        <p class="subtitle">Pour financer le chapiteau de la Fancy-fair</p>
-        
-        <div class="info-box">
-            <div class="info-item">
-                <strong>École :</strong> École communale d'Hennuyères
-            </div>
-            <div class="info-item">
-                <strong>Billets :</strong> Numéros 1 à 500
-            </div>
-            <div class="info-item">
-                <strong>Date du tirage :</strong> 25 juin 2026 à 12h00
-            </div>
-        </div>
-        
-        <div class="prizes">
-            <h2>🏆 Lots à Gagner</h2>
-            <div class="prize-list">
-                <div class="prize">
-                    <div class="prize-title">Robot pâtissier</div>
-                    <div class="prize-tickets">N°: 42, 137</div>
-                </div>
-                <div class="prize">
-                    <div class="prize-title">Enceinte JBL</div>
-                    <div class="prize-tickets">N°: 205, 318</div>
-                </div>
-                <div class="prize">
-                    <div class="prize-title">Casque audio JBL</div>
-                    <div class="prize-tickets">N°: 77, 444, 12, 299</div>
-                </div>
-                <div class="prize">
-                    <div class="prize-title">Plancha</div>
-                    <div class="prize-tickets">N°: 18</div>
-                </div>
-                <div class="prize">
-                    <div class="prize-title">Gaufrier</div>
-                    <div class="prize-tickets">N°: 5000</div>
-                </div>
-                <div class="prize">
-                    <div class="prize-title">Bon cinéma</div>
-                    <div class="prize-tickets">N°: 2596</div>
-                </div>
-                <div class="prize">
-                    <div class="prize-title">Appareil à raclette</div>
-                    <div class="prize-tickets">N°: 1236</div>
-                </div>
-                <div class="prize">
-                    <div class="prize-title">Airfryer</div>
-                    <div class="prize-tickets">N°: 4963</div>
-                </div>
-                <div class="prize">
-                    <div class="prize-title">Trottinette</div>
-                    <div class="prize-tickets">N°: 1111</div>
-                </div>
-                <div class="prize">
-                    <div class="prize-title">Uno</div>
-                    <div class="prize-tickets">N°: 2525</div>
-                </div>
-                <div class="prize">
-                    <div class="prize-title">Mini vidéo projecteur</div>
-                    <div class="prize-tickets">N°: 2363</div>
-                </div>
-                <div class="prize">
-                    <div class="prize-title">Pili Pili</div>
-                    <div class="prize-tickets">N°: 852</div>
-                </div>
-                <div class="prize">
-                    <div class="prize-title">Set de couteaux</div>
-                    <div class="prize-tickets">N°: 963</div>
-                </div>
-                <div class="prize">
-                    <div class="prize-title">Jeu Flip 7</div>
-                    <div class="prize-tickets">N°: 1899</div>
-                </div>
-                <div class="prize">
-                    <div class="prize-title">Montre connectée</div>
-                    <div class="prize-tickets">N°: 3444</div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="footer">
-            <p>Bonne chance à tous les participants ! 🍀</p>
-        </div>
-    </div>
-</body>
-</html>
+const CONFIG = {
+  "eventSubtitle": "Pour financer le chapiteau de la Fancy-fair",
+  "schoolName": "École communale d'Hennuyères",
+  "ticketFrom": 1,
+  "ticketTo": 500,
+  "drawDateTime": "2026-06-25T12:00",
+  "password": "ecole2024",
+  "prizes": [
+    {
+      "label": "Robot pâtissier",
+      "tickets": "42,137"
+    },
+    {
+      "label": "Enceinte JBL",
+      "tickets": "205,318"
+    },
+    {
+      "label": "Casque audio JBL",
+      "tickets": "77,444,12,299"
+    },
+    {
+      "label": "Plancha",
+      "tickets": "18"
+    },
+    {
+      "label": "Gaufrier",
+      "tickets": "5000"
+    },
+    {
+      "label": "Bon cinéma",
+      "tickets": "2596"
+    },
+    {
+      "label": "Appareil à raclette",
+      "tickets": "1236"
+    },
+    {
+      "label": "Airfryer",
+      "tickets": "4963"
+    },
+    {
+      "label": "Trottinette",
+      "tickets": "1111"
+    },
+    {
+      "label": "Uno",
+      "tickets": "2525"
+    },
+    {
+      "label": "Mini vidéo projecteur",
+      "tickets": "2363"
+    },
+    {
+      "label": "pili pili",
+      "tickets": "852"
+    },
+    {
+      "label": "Set de couteaux",
+      "tickets": "963"
+    },
+    {
+      "label": "Jeu Flip 7",
+      "tickets": "1899"
+    },
+    {
+      "label": "Montre connectée",
+      "tickets": "3444"
+    }
+  ]
+};
