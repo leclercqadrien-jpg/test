@@ -243,7 +243,7 @@ const CONFIG = {
   "schoolName": "École communale d'Hennuyères",
   "ticketFrom": 1,
   "ticketTo": 5000,
-  "drawDateTime": "2026-06-25T12:00",
+  "drawDateTime": "2026-06-25T10:00",
   "password": "ecole2024",
   "prizes": [
     {
